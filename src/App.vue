@@ -1,30 +1,34 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <header>
+    <nav>
+      <div class="container samakats">
+        <ul class="list1">
+          <li><a href="#">REVIEWS</a></li>
+          <li><a href="#">SHIPPING AND PAYMENT</a></li>
+          <li><a href="#">WHOLESALE</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">CONTACTS</a></li>
+        </ul>
+        <ul class="list2">
+          <a href="#"> <img src="./assets/img/icons/basket.svg" alt="" /></a>
+          <a href="#"> <img src="./assets/img/icons/instagram.svg" alt="" /></a>
+          <a href="#">+1 (888) 888-88-88</a>
+        </ul>
+      </div>
+    </nav>
+    <div class="logo" style="background-color: aliceblue">
+      <div class="container">
+      <img src="./assets/img/samakats/logo.jpg" alt="logo" />
+      </div>
+    </div>
+  </header>
 </template>
+<script>
+import HelloWorld from "./components/HelloWorld.vue";
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+export default {
+  components: {
+    HelloWorld,
+  },
+};
+</script>

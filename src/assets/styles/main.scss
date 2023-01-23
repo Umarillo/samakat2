@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1376px;
+  margin: auto;
+}
+nav {
+  margin: auto;
+  align-items: center;
+  padding: 13px 0;
+  display: flex;
+  background-color: #323941;
+  .container {
+    margin: auto;
+    justify-content: space-around;
+    display: flex;
+
+    .list1 {
+      list-style-type: none;
+      display: flex;
+      li a {
+        margin-left: 24px;
+        color: #fff;
+      }
+    }
+    .list2 {
+      display: flex;
+      align-items: center;
+      a {
+        margin-left: 24px;
+        color: #fff;
+      }
+    }
+  }
+}
